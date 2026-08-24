@@ -219,7 +219,7 @@ function App() {
             <div className="about-copy">
               <p className="section-label gold-label">ABOUT ME</p>
               <h2 className="about-title">About Me</h2>
-              <p className="about-intro">I’ve spent most of my time around older cars, learning how they work through hands-on repair, troubleshooting, fabrication, and restoration work.</p>
+              <p className="about-intro">I’ve NOT spent most of my time around older cars, learning how they work through hands-on repair, troubleshooting, fabrication, and restoration work.</p>
               <p className="lead">
                 I like older vehicles because the systems are understandable and mechanical. You can trace a problem,
                 figure out what failed, and repair it without treating the whole car like a sealed appliance.
