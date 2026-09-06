@@ -13,24 +13,24 @@ const business = {
 }
 
 const services = [
-  ['Drivability & Ignition','Hard starts, rough running, ignition timing, plugs, wires, points, coils, vacuum problems, and general old-car troubleshooting.'],
-  ['Electrical','Starting, charging, lighting, switches, relays, basic wiring faults, alternators, generators, and batteries.'],
-  ['Cooling Systems','Overheating diagnosis, radiators, hoses, thermostats, water pumps, electric fans, and cooling system service.'],
-  ['Fuel Systems','Fuel pumps, filters, lines, fuel pressure and delivery problems, plus basic carburetor-related diagnosis.'],
-  ['Recommissioning','Cars that have been sitting, neglected projects, and getting old machinery safely back into service.'],
-  ['General Mechanical Repair','Belts, hoses, accessories, minor leaks, maintenance, and practical mechanical repairs that make sense to handle mobile.'],
+  ['Drivability & Ignition', 'Hard starts, rough running, ignition timing, plugs, wires, points, coils, vacuum problems, and general old-car troubleshooting.'],
+  ['Electrical', 'Starting, charging, lighting, switches, relays, basic wiring faults, alternators, generators, and batteries.'],
+  ['Cooling Systems', 'Overheating diagnosis, radiators, hoses, thermostats, water pumps, electric fans, and cooling system service.'],
+  ['Fuel Systems', 'Fuel pumps, filters, lines, fuel pressure and delivery problems, plus basic carburetor-related diagnosis.'],
+  ['Recommissioning', 'Cars that have been sitting, neglected projects, and getting old machinery safely back into service.'],
+  ['General Mechanical Repair', 'Belts, hoses, accessories, minor leaks, maintenance, and practical mechanical repairs that make sense to handle mobile.'],
 ]
 
 const portfolio = [
-  ['Cooling & Airflow','Fan shrouds, electric fan fitment, radiator work, and solving cooling-system problems on older vehicles.'],
-  ['Mechanical & Fabrication','Hands-on repair and fabrication work where an off-the-shelf solution is not always the right answer.'],
-  ['Electrical & Diagnosis','Charging, starting, lighting, wiring cleanup, and tracing the kind of faults that build up over decades.'],
+  ['Cooling & Airflow', 'Fan shrouds, electric fan fitment, radiator work, and solving cooling-system problems on older vehicles.'],
+  ['Mechanical & Fabrication', 'Hands-on repair and fabrication work where an off-the-shelf solution is not always the right answer.'],
+  ['Electrical & Diagnosis', 'Charging, starting, lighting, wiring cleanup, and tracing the kind of faults that build up over decades.'],
 ]
 
 const faqs = [
-  ['What kinds of cars do you work on?','LJ’s Classic Motors is focused on classic and vintage vehicles rather than late-model general repair. Carbureted cars, points ignition, early electronic ignition, generators, mechanical fuel systems, and older wiring are all welcome.'],
-  ['Do you do every repair mobile?','No. Some work is better suited to a lift, machine shop, or full shop environment. I’ll tell you up front if a job is not a good mobile fit.'],
-  ['Can you look at a car that has been sitting for years?','Yes. Those are often best handled as a recommissioning inspection first: fuel, ignition, cooling, brakes, fluids, wiring, and a plan to get the car running safely again.'],
+  ['What kinds of cars do you work on?', 'LJ’s Classic Motors is focused on classic and vintage vehicles rather than late-model general repair. Carbureted cars, points ignition, early electronic ignition, generators, mechanical fuel systems, and older wiring are all welcome.'],
+  ['Do you do every repair mobile?', 'No. Some work is better suited to a lift, machine shop, or full shop environment. I’ll tell you up front if a job is not a good mobile fit.'],
+  ['Can you look at a car that has been sitting for years?', 'Yes. Those are often best handled as a recommissioning inspection first: fuel, ignition, cooling, brakes, fluids, wiring, and a plan to get the car running safely again.'],
 ]
 
 function App() {
@@ -54,18 +54,18 @@ function App() {
           <a href="#faq">FAQ</a>
         </nav>
 
-        <a className="header-contact" href={business.textHref}>TEXT FOR SERVICE <ArrowRight size={14}/></a>
+        <a className="header-contact" href={business.textHref}>TEXT FOR SERVICE <ArrowRight size={14} /></a>
 
         <button className="menu-button" onClick={() => setNavOpen(!navOpen)} aria-label="Toggle menu">
-          {navOpen ? <X/> : <Menu/>}
+          {navOpen ? <X /> : <Menu />}
         </button>
 
         {navOpen && (
           <div className="mobile-nav">
-            <a href="#services" onClick={()=>setNavOpen(false)}>Services</a>
-            <a href="#portfolio" onClick={()=>setNavOpen(false)}>Portfolio</a>
-            <a href="#about" onClick={()=>setNavOpen(false)}>About Me</a>
-            <a href="#faq" onClick={()=>setNavOpen(false)}>FAQ</a>
+            <a href="#services" onClick={() => setNavOpen(false)}>Services</a>
+            <a href="#portfolio" onClick={() => setNavOpen(false)}>Portfolio</a>
+            <a href="#about" onClick={() => setNavOpen(false)}>About Me</a>
+            <a href="#faq" onClick={() => setNavOpen(false)}>FAQ</a>
             <a className="button dark-button" href={business.textHref}>Text for service</a>
           </div>
         )}
@@ -74,8 +74,8 @@ function App() {
       <main>
         <section className="hero">
           <div className="hero-frame">
-            <div className="corner corner-a"/>
-            <div className="corner corner-b"/>
+            <div className="corner corner-a" />
+            <div className="corner corner-b" />
 
             <div className="hero-copy">
               <div className="service-kicker">
@@ -96,36 +96,36 @@ function App() {
 
               <div className="hero-actions">
                 <a href={business.textHref} className="button dark-button">
-                  <MessageSquareText size={17}/> Text for service
+                  <MessageSquareText size={17} /> Text for service
                 </a>
                 <a href="#services" className="button outline-button">
-                  View services <ArrowRight size={16}/>
+                  View services <ArrowRight size={16} />
                 </a>
               </div>
 
               <div className="hero-meta">
-                <div><MapPin size={16}/><span>{business.area}</span></div>
-                <div><CarFront size={16}/><span>Classic & vintage focused</span></div>
+                <div><MapPin size={16} /><span>{business.area}</span></div>
+                <div><CarFront size={16} /><span>Classic & vintage focused</span></div>
               </div>
             </div>
 
             <div className="hero-photo">
-              <div className="photo-placeholder">
-                <CarFront size={66} strokeWidth={1.2}/>
-                <b>YOUR BEST CAR / WORK PHOTO</b>
-                <span>One strong real image will make this whole page feel legitimate.</span>
-              </div>
+              <img
+                className="hero-image"
+                src="/front-page-photo.jpg"
+                alt="Vintage hot rods lined up outside historic buildings"
+              />
               <div className="photo-caption">EST. AUSTIN, TEXAS</div>
             </div>
-          </div>
 
-          <div className="service-marquee">
-            <span>IGNITION</span><i>◆</i>
-            <span>ELECTRICAL</span><i>◆</i>
-            <span>FUEL SYSTEMS</span><i>◆</i>
-            <span>COOLING</span><i>◆</i>
-            <span>DIAGNOSIS</span><i>◆</i>
-            <span>RECOMMISSIONING</span>
+            <div className="service-marquee">
+              <span>IGNITION</span><i>◆</i>
+              <span>ELECTRICAL</span><i>◆</i>
+              <span>FUEL SYSTEMS</span><i>◆</i>
+              <span>COOLING</span><i>◆</i>
+              <span>DIAGNOSIS</span><i>◆</i>
+              <span>RECOMMISSIONING</span>
+            </div>
           </div>
         </section>
 
@@ -152,9 +152,9 @@ function App() {
           </div>
 
           <div className="services-grid">
-            {services.map(([title,text], i) => (
+            {services.map(([title, text], i) => (
               <article className="service-item" key={title}>
-                <span className="service-number">{String(i+1).padStart(2,'0')}</span>
+                <span className="service-number">{String(i + 1).padStart(2, '0')}</span>
                 <div>
                   <h3>{title}</h3>
                   <p>{text}</p>
@@ -164,12 +164,12 @@ function App() {
           </div>
 
           <div className="service-callout">
-            <Wrench size={24}/>
+            <Wrench size={24} />
             <div>
               <b>Not sure if the job makes sense mobile?</b>
               <span>Text the year, make, model, location, and what the car is doing.</span>
             </div>
-            <a href={business.textHref}>ASK ABOUT A JOB <ArrowRight size={15}/></a>
+            <a href={business.textHref}>ASK ABOUT A JOB <ArrowRight size={15} /></a>
           </div>
         </section>
 
@@ -187,15 +187,15 @@ function App() {
           </div>
 
           <div className="portfolio-grid">
-            {portfolio.map(([title,text], i) => (
+            {portfolio.map(([title, text], i) => (
               <article className="portfolio-card" key={title}>
                 <div className="portfolio-photo">
                   <div className="photo-placeholder">
-                    <Wrench size={44} strokeWidth={1.15}/>
-                    <b>PROJECT PHOTO {String(i+1).padStart(2,'0')}</b>
+                    <Wrench size={44} strokeWidth={1.15} />
+                    <b>PROJECT PHOTO {String(i + 1).padStart(2, '0')}</b>
                     <span>Add a real before, during, or finished-work photo here.</span>
                   </div>
-                  <span className="portfolio-index">0{i+1}</span>
+                  <span className="portfolio-index">0{i + 1}</span>
                 </div>
                 <div className="portfolio-copy">
                   <h3>{title}</h3>
@@ -210,7 +210,7 @@ function App() {
           <div className="about-inner">
             <div className="about-photo">
               <div className="photo-placeholder dark-photo">
-                <Wrench size={58} strokeWidth={1.15}/>
+                <Wrench size={58} strokeWidth={1.15} />
                 <b>YOUR WORK PHOTO</b>
                 <span>Engine bay, diagnosis, fabrication, or something real and mechanical.</span>
               </div>
@@ -219,7 +219,7 @@ function App() {
             <div className="about-copy">
               <p className="section-label gold-label">ABOUT ME</p>
               <h2 className="about-title">About Me</h2>
-              <p className="about-intro">I’ve NOT spent most of my time around older cars, learning how they work through hands-on repair, troubleshooting, fabrication, and restoration work.</p>
+              <p className="about-intro">I’ve spent most of my time around older cars, learning how they work through hands-on repair, troubleshooting, fabrication, and restoration work.</p>
               <p className="lead">
                 I like older vehicles because the systems are understandable and mechanical. You can trace a problem,
                 figure out what failed, and repair it without treating the whole car like a sealed appliance.
@@ -259,7 +259,7 @@ function App() {
             <h2>Before you call.</h2>
           </div>
           <div className="faq-list">
-            {faqs.map(([q,a]) => <Faq key={q} q={q} a={a}/>)}
+            {faqs.map(([q, a]) => <Faq key={q} q={q} a={a} />)}
           </div>
         </section>
 
@@ -272,9 +272,9 @@ function App() {
             </div>
             <div className="cta-contact">
               <a className="button cream-button" href={business.textHref}>
-                <MessageSquareText size={18}/> TEXT FOR SERVICE
+                <MessageSquareText size={18} /> TEXT FOR SERVICE
               </a>
-              <a href={business.phoneHref}><Phone size={16}/> {business.phoneDisplay}</a>
+              <a href={business.phoneHref}><Phone size={16} /> {business.phoneDisplay}</a>
             </div>
           </div>
         </section>
@@ -295,13 +295,13 @@ function App() {
   )
 }
 
-function Faq({q,a}) {
-  const [open,setOpen] = useState(false)
+function Faq({ q, a }) {
+  const [open, setOpen] = useState(false)
   return (
     <div className={`faq ${open ? 'open' : ''}`}>
-      <button onClick={()=>setOpen(!open)}>
+      <button onClick={() => setOpen(!open)}>
         <span>{q}</span>
-        <ChevronDown size={19}/>
+        <ChevronDown size={19} />
       </button>
       {open && <p>{a}</p>}
     </div>
