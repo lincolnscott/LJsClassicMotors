@@ -72,6 +72,14 @@ function App() {
       </header>
 
       <main>
+        <div className="service-marquee">
+          <span>IGNITION</span><i>◆</i>
+          <span>ELECTRICAL</span><i>◆</i>
+          <span>FUEL SYSTEMS</span><i>◆</i>
+          <span>COOLING</span><i>◆</i>
+          <span>DIAGNOSIS</span><i>◆</i>
+          <span>RECOMMISSIONING</span>
+        </div>
         <section className="hero">
           <div className="hero-frame">
             <div className="corner corner-a" />
@@ -118,14 +126,7 @@ function App() {
               <div className="photo-caption">EST. AUSTIN, TEXAS</div>
             </div>
 
-            <div className="service-marquee">
-              <span>IGNITION</span><i>◆</i>
-              <span>ELECTRICAL</span><i>◆</i>
-              <span>FUEL SYSTEMS</span><i>◆</i>
-              <span>COOLING</span><i>◆</i>
-              <span>DIAGNOSIS</span><i>◆</i>
-              <span>RECOMMISSIONING</span>
-            </div>
+
           </div>
         </section>
 
